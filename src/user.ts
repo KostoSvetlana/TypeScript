@@ -20,6 +20,7 @@ export function renderUserBlock (userName: string, avatarLink: string, favoriteI
   )
 }
 
+
 export function getUserData(user: unknown): { username: string, avatarUrl: string } {   
   const emptyUser = {
     username: 'unknown',
