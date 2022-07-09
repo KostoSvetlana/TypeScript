@@ -3,6 +3,8 @@ import { renderSearchStubBlock } from './search-results.js'
 import { getFavoritesAmount, getUserData, renderUserBlock } from './user.js'
 import { renderToast } from './lib.js'
 
+
+
 window.addEventListener('DOMContentLoaded', () => {
   const storageUserData = JSON.parse(localStorage.getItem('user'));
   const userData = getUserData(storageUserData)
