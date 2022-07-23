@@ -2,10 +2,11 @@
   "name": "typescript",
   "version": "1.0.0",
   "description": "",
+  "types": "./public/scripts/types/index.d.ts",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf public/scripts && tsc",
-    "build:dev": "rm -rf public/scripts && tsc -p tsconfig-dev.json",
+    "build": "rimraf -rf public/scripts && tsc",
+    "build:dev": "rimraf -rf public/scripts && tsc -p tsconfig-dev.json",
     "start": "http-server -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src --ext .js --ext .ts",
